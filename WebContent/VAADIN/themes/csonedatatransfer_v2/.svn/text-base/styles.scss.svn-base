@@ -1,0 +1,9 @@
+@import "addons.scss";
+@import "csonedatatransfer_v2.scss";
+
+/* This file prefixes all rules with the theme name to avoid causing conflicts with other themes. */
+/* The actual styles should be defined in csonedatatransfer_v2.scss */
+.csonedatatransfer_v2 {
+  @include addons;
+  @include csonedatatransfer_v2;
+}

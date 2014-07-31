@@ -1,0 +1,44 @@
+/* Import the reindeer theme.*/
+/* This only allows us to use the mixins defined in it and does not add any styles by itself. */
+@import "../reindeer/reindeer.scss";
+
+/* This contains all of your theme.*/
+/* If somebody wants to extend the theme she will include this mixin. */
+@mixin csonedatatransfer_v2 {
+  /* Include all the styles from the reindeer theme */
+  @include reindeer;
+
+  /* Insert your theme rules here */
+  
+  .label{
+  	padding-top:40px; 
+  	padding-bottom:20px; 
+  	text-align:center;
+  }
+  .layoutCenter{
+  	text-align:center;
+  	padding:10px;
+  	color:none;
+  }
+  .button{
+  	margin-top:20px; 
+  }
+  .panelLayout{
+  	width:300px; 
+  	height:300px; 
+  	margin-left:auto;
+  	margin-right:auto; 
+  	display:block; 
+  	margin-top:100px; 
+  }
+  .upload .v-button,
+  .upload .v-button .v-button-wrap {
+	visibility: hidden;
+	margin-left:-500px !Important;
+  }
+  .redText{
+  	color:red; 
+  	text-align:center;
+  	padding:10px;
+  }
+}
